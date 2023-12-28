@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'Pages/jobpage.dart';
 
 void main() {
@@ -14,9 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          // This is the theme of your application.
-
-          ),
+          textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)),
       home: const JobPage(),
     );
   }
